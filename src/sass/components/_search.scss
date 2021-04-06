@@ -1,0 +1,48 @@
+.search {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  height: 3rem;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  transition: all 0.3s ease;
+
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 2px 8px 1px rgb(64 60 67 / 24%);
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    padding-left: 2rem;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border-bottom: 1px solid rgba(var(--rgb-prim), 0.2);
+  }
+}

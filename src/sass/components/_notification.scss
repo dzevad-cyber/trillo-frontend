@@ -1,0 +1,21 @@
+.notification {
+  position: relative;
+  height: 20px;
+  cursor: pointer;
+
+  &__bubble {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: -10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--clr-prim);
+    color: var(--clr-w);
+    font-size: 1rem;
+
+    display: grid;
+    place-items: center;
+  }
+}

@@ -1,0 +1,24 @@
+@keyframes navLinkHover {
+  0% {
+    top: 100%;
+    left: 0;
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(-100%);
+    animation-play-state: paused;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    width: 100%;
+  }
+}

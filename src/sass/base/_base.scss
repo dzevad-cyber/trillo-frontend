@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+:root {
+  --clr-prim: #eb2f64;
+  --clr-prim-light: #ff3366;
+  --clr-prim-dark: #ba265d;
+
+  --clr-grey-light-1: #faf9f9;
+  --clr-grey-light-2: #f4f2f2;
+  --clr-grey-light-3: #f0eeee;
+  --clr-grey-light-4: #ccc;
+
+  --clr-grey-dark-1: #333;
+  --clr-grey-dark-2: #777;
+  --clr-grey-dark-3: #999;
+
+  --clr-w: #fff;
+
+  // rgb colors
+  --rgb-prim: rgb(255, 51, 102);
+
+  // font-sizes
+  --fz-tiny: 1.1rem;
+  --fz-small: 1.4rem;
+  --fz-base: 1.6rem;
+
+  // shadows
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  // line
+  --line1: 1px solid var(--color-grey-light-2);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--clr-grey-dark-2);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-prim-light),
+    var(--clr-prim-dark)
+  );
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font-family: inherit;
+}
+
+::selection {
+  background-color: var(--clr-prim);
+  color: var(--clr-w);
+}
+
+//////////////////////////////////////////////////////////////////////
+// UTILITY CLASSES
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--clr-grey-dark-2);
+}
